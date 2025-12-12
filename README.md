@@ -40,7 +40,8 @@ cursor-rule/
 ├── .cursor/
 │   └── rules/
 │       ├── ui-rules/               # UI/프론트엔드 규칙
-│       │   └── react.md           # React 코딩 규칙
+│       │   ├── react.md           # React 코딩 규칙
+│       │   └── react-typescript.md # React TypeScript 코딩 규칙
 │       └── workflow-rules/         # 워크플로우 규칙
 │           └── pr.md               # PR 생성 규칙 (Git Flow)
 ├── .github/
@@ -106,6 +107,7 @@ cp .cursorrules ~/.cursorrules
 ### 세부 규칙 파일
 
 - **`.cursor/rules/ui-rules/react.md`**: React 전용 코딩 규칙
+- **`.cursor/rules/ui-rules/react-typescript.md`**: React TypeScript 전용 코딩 규칙
 - **`.cursor/rules/workflow-rules/pr.md`**: Git Flow 기반 PR 생성 규칙
   - 브랜치 전략 및 네이밍 규칙
   - PR 제목 및 본문 작성 가이드
