@@ -61,3 +61,39 @@ Cursor에서 규칙이 적용되었는지 확인하려면:
 
 1. Cursor 채팅에서 규칙에 대한 질문을 해보세요
 2. 예: "현재 적용된 코딩 규칙을 알려주세요"
+
+## 커밋 메시지 템플릿 설정
+
+프로젝트에 포함된 `.gitmessage` 파일을 Git 커밋 템플릿으로 설정할 수 있습니다.
+
+### 프로젝트별 설정
+
+프로젝트 루트에서 다음 명령어를 실행합니다:
+
+```bash
+git config commit.template .gitmessage
+```
+
+### 전역 설정
+
+모든 프로젝트에서 사용하려면:
+
+```bash
+# 템플릿 파일을 홈 디렉토리로 복사
+cp .gitmessage ~/.gitmessage
+
+# 전역 Git 설정에 추가
+git config --global commit.template ~/.gitmessage
+```
+
+### 사용 방법
+
+템플릿을 설정한 후 `git commit` 명령어를 실행하면 자동으로 템플릿이 열립니다:
+
+```bash
+git commit
+```
+
+템플릿의 주석 부분을 삭제하고 실제 커밋 메시지를 작성하면 됩니다.
+
+자세한 내용은 `.github/COMMIT_TEMPLATE.md` 파일을 참고하세요.
