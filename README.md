@@ -37,6 +37,16 @@ Cursor AI를 위한 체계적인 코딩 규칙 템플릿 및 가이드 모음입
 ```
 cursor-rule/
 ├── .cursorrules                    # Cursor AI 코딩 규칙 템플릿
+├── .cursor/
+│   └── rules/
+│       ├── ui-rules/               # UI/프론트엔드 규칙
+│       │   └── react.md           # React 코딩 규칙
+│       └── workflow-rules/         # 워크플로우 규칙
+│           └── pr.md               # PR 생성 규칙 (Git Flow)
+├── .github/
+│   ├── pull_request_template.md    # GitHub PR 템플릿
+│   └── COMMIT_TEMPLATE.md          # 커밋 메시지 템플릿 가이드
+├── .gitmessage                     # Git 커밋 메시지 템플릿
 ├── CURSOR_RULES_ARCHITECTURE.md   # 아키텍처 가이드 문서
 ├── CURSOR_RULES_SETUP.md          # 설정 가이드 문서
 └── README.md                       # 프로젝트 소개 문서
@@ -74,8 +84,12 @@ cp .cursorrules ~/.cursorrules
 
 - **[CURSOR_RULES_ARCHITECTURE.md](./CURSOR_RULES_ARCHITECTURE.md)**: 규칙의 구조와 설계 원칙에 대한 상세 가이드
 - **[CURSOR_RULES_SETUP.md](./CURSOR_RULES_SETUP.md)**: 전역 및 프로젝트별 설정 방법 안내
+- **[.cursor/rules/workflow-rules/pr.md](./.cursor/rules/workflow-rules/pr.md)**: Git Flow 기반 PR 생성 및 작성 가이드
+- **[.cursor/rules/ui-rules/react.md](./.cursor/rules/ui-rules/react.md)**: React 코딩 규칙 가이드
 
 ## 🎨 규칙 구성
+
+### 메인 규칙 파일 (`.cursorrules`)
 
 `.cursorrules` 파일은 다음과 같은 섹션으로 구성됩니다:
 
@@ -84,10 +98,21 @@ cp .cursorrules ~/.cursorrules
 - 📝 **코드 스타일**: 네이밍 컨벤션 및 포맷팅 규칙
 - 📁 **프로젝트 구조**: 파일 및 폴더 조직 가이드
 - 🔒 **코드 품질**: 에러 처리, 성능, 보안 규칙
-- 🧪 **개발 워크플로우**: 테스트 및 문서화 가이드
+- 🧪 **개발 워크플로우**: 테스트, 문서화, PR 가이드
 - 🔧 **기술 스택별 규칙**: TypeScript, React, Node.js 등
 - 🤖 **AI 어시스턴트 지침**: Cursor AI 동작 가이드
 - 🎨 **프로젝트별 커스터마이징**: 프로젝트 특화 규칙 공간
+
+### 세부 규칙 파일
+
+- **`.cursor/rules/ui-rules/react.md`**: React 전용 코딩 규칙
+- **`.cursor/rules/workflow-rules/pr.md`**: Git Flow 기반 PR 생성 규칙
+  - 브랜치 전략 및 네이밍 규칙
+  - PR 제목 및 본문 작성 가이드
+  - 커밋 메시지 규칙 (Conventional Commits)
+  - PR 리뷰 및 병합 가이드라인
+- **`.gitmessage`**: Git 커밋 메시지 템플릿 (Conventional Commits 형식)
+- **`.github/COMMIT_TEMPLATE.md`**: 커밋 메시지 작성 가이드 및 예시
 
 ## 🔄 규칙 우선순위
 
